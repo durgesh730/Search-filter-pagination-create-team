@@ -29,8 +29,8 @@ const Navbar = () => {
           <nav>
             <div className='logo'><Link to="/" >Haliverse</Link></div>
             <div className='RightNav'>
+              <Link to='/'>Home</Link>
               <Link to='/cart'>Created Team</Link>
-              <Link to='/'>Signup</Link>
               <span className='Bars' onClick={handleClick}><FaBars /></span>
             </div>
           </nav>
@@ -39,9 +39,7 @@ const Navbar = () => {
         <div className='Sidenav' id='SideNav'>
           <span onClick={CloseNav} id="Close" style={{ fontSize: "1.5rem" }} ><BsArrowReturnLeft /></span>
           <Link to='/'>Home</Link>
-          <Link to='/'>Login</Link>
-          <Link to='/'>Signup</Link>
-          <Link id='logout' >Logout</Link>
+          <Link to='/cart'>Created Team</Link>
         </div>
       </div>
     </>
